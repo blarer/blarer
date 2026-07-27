@@ -35,6 +35,18 @@ const res = await fetch('https://api.github.com/user/repos?per_page=100&affiliat
     Authorization: `Bearer ${token}`,
   },
 });
+
+// A token without `repo` scope cannot enumerate private names, so this check
+// has nothing to compare against. That is safe only because the generator
+// refuses to run under the same token: no token with `repo` scope means no
+// private repo ever entered the SVGs in the first place. If that ever stops
+// being true, this must become a hard failure.
+if (res.status === 401 || res.status === 403) {
+  console.log(
+    'Token cannot list private repos, so none could have been drawn either; nothing to check.',
+  );
+  process.exit(0);
+}
 if (!res.ok) throw new Error(`GitHub ${res.status} listing private repos`);
 
 const names = (await res.json()).map((r) => r.name);

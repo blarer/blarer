@@ -1,0 +1,10 @@
+{
+  "name": "blarer-profile",
+  "private": true,
+  "type": "module",
+  "description": "Profile README and the treemap generator behind it",
+  "scripts": {
+    "build": "node scripts/generate-treemap.mjs && node scripts/check-no-private-names.mjs",
+    "test": "node scripts/test-privacy.mjs"
+  }
+}
