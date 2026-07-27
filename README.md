@@ -8,13 +8,15 @@ If I can't measure it, I don't claim it.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/work-dark.svg">
-  <img alt="Treemap of my public repositories, each tile sized by source bytes and split by language." src="./assets/work-light.svg">
+  <img alt="Treemap of my repositories, each tile sized by source bytes and split by language." src="./assets/work-light.svg">
 </picture>
 
 Every tile is one repository, sized by its source bytes and split by language,
-laid out with the same squarified treemap the site uses. Regenerated nightly
-from the GitHub API by [a workflow in this repo](./.github/workflows/treemap.yml)
-— it commits only when the drawing actually changes.
+laid out with the same squarified treemap the site uses. Private repositories
+are in the picture as shape only: their language mix and volume are real, their
+names and contents are not published. Regenerated nightly from the GitHub API by
+[a workflow in this repo](./.github/workflows/treemap.yml), which refuses to
+commit if a private name ever appears in the output.
 
 ---
 

@@ -29,13 +29,22 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Generate treemap
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # A PAT with `repo` scope (secret REPOS_TOKEN) lets the treemap
+          # include private repositories as unlabelled shape. Without it this
+          # falls back to the built-in token, which sees only public repos.
+          GITHUB_TOKEN: ${{ secrets.REPOS_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
         run: node scripts/generate-treemap.mjs
+
+      - name: Verify no private names leaked
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPOS_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: node scripts/check-no-private-names.mjs
 
       - name: Commit if changed
         run: |

@@ -93,8 +93,10 @@ function render(tiles, theme, meta) {
     `<title>${esc(meta.alt)}</title>`,
   ];
 
-  for (const tile of tiles) {
-    const id = `clip-${tile.key.replace(/[^a-zA-Z0-9]/g, '-')}`;
+  for (const [i, tile] of tiles.entries()) {
+    // Index-based ids, never the repo name: a name in a clipPath id would leak
+    // private repo names into the SVG source even though no label is drawn.
+    const id = `t${i}`;
     parts.push(
       `<clipPath id="${id}"><rect x="${tile.x.toFixed(2)}" y="${tile.y.toFixed(2)}" width="${tile.width.toFixed(2)}" height="${tile.height.toFixed(2)}" rx="5"/></clipPath>`,
       `<g clip-path="url(#${id})">`,
@@ -107,15 +109,19 @@ function render(tiles, theme, meta) {
     }
     parts.push('</g>');
 
+    // Private repos are drawn dimmer and dashed: present and measured, but
+    // visibly not something you can click through to.
     parts.push(
-      `<rect x="${tile.x.toFixed(2)}" y="${tile.y.toFixed(2)}" width="${tile.width.toFixed(2)}" height="${tile.height.toFixed(2)}" rx="5" fill="none" stroke="${t.line}" stroke-width="1"/>`,
+      `<rect x="${tile.x.toFixed(2)}" y="${tile.y.toFixed(2)}" width="${tile.width.toFixed(2)}" height="${tile.height.toFixed(2)}" rx="5" fill="none" stroke="${t.line}" stroke-width="1"${tile.private ? ' stroke-dasharray="3 3"' : ''}/>`,
     );
 
     // Only label tiles with room for the text; anything smaller reads as noise.
+    const named = !tile.private || PRIVATE_NAMES;
     if (tile.width > 92 && tile.height > 40) {
       const tx = (tile.x + 10).toFixed(2);
+      const label = named ? tile.name : 'private';
       parts.push(
-        `<text x="${tx}" y="${(tile.y + 22).toFixed(2)}" font-size="13" font-weight="600" fill="${t.fg}">${esc(tile.name)}</text>`,
+        `<text x="${tx}" y="${(tile.y + 22).toFixed(2)}" font-size="13" font-weight="600" fill="${named ? t.fg : t.muted}"${named ? '' : ' font-style="italic"'}>${esc(label)}</text>`,
         `<text x="${tx}" y="${(tile.y + 38).toFixed(2)}" font-size="11" fill="${t.muted}">${esc(bytes(tile.value))}</text>`,
       );
     }
@@ -128,14 +134,32 @@ function render(tiles, theme, meta) {
   return `${parts.join('\n')}\n`;
 }
 
-const list = await api(`/users/${USER}/repos?per_page=100&sort=pushed`);
+// Private repositories are included as shape only: their language mix and
+// source volume are real, but nothing about their contents is exposed. Set
+// PRIVATE_NAMES=1 to also print their names on the tiles; by default they are
+// drawn unlabelled with a dashed border, so the grid is honest about how much
+// work exists without naming work that isn't public.
+const INCLUDE_PRIVATE = process.env.INCLUDE_PRIVATE !== '0';
+const PRIVATE_NAMES = process.env.PRIVATE_NAMES === '1';
+
+/** Owned repos, public plus (optionally) private. Needs a token with `repo` for private. */
+async function ownedRepos() {
+  if (!INCLUDE_PRIVATE) return api(`/users/${USER}/repos?per_page=100&sort=pushed`);
+  if (!process.env.GITHUB_TOKEN) {
+    throw new Error('INCLUDE_PRIVATE needs GITHUB_TOKEN with `repo` scope; set INCLUDE_PRIVATE=0 for public only');
+  }
+  return api('/user/repos?per_page=100&affiliation=owner&sort=pushed');
+}
+
+const list = await ownedRepos();
 const repos = await Promise.all(
   list
-    .filter((r) => !r.fork && !r.archived && !r.private)
+    .filter((r) => !r.fork && !r.archived)
     .map(async (r) => ({
       key: r.name,
       name: r.name,
-      languages: await api(`/repos/${USER}/${r.name}/languages`),
+      private: Boolean(r.private),
+      languages: await api(`/repos/${r.full_name ?? `${USER}/${r.name}`}/languages`),
     })),
 );
 
@@ -156,14 +180,20 @@ const tiles = squarify(sized, { x: 0, y: 0, width: WIDTH, height: HEIGHT }).map(
 }));
 
 const total = sized.reduce((sum, r) => sum + r.value, 0);
+const privateCount = sized.filter((r) => r.private).length;
+const publicCount = sized.length - privateCount;
 const synced = new Date().toISOString().slice(0, 10);
+
+// State the public/private split outright. Hiding that private work is in the
+// picture would make the byte total unverifiable and quietly misleading.
+const mix = privateCount > 0 ? `${publicCount} public · ${privateCount} private` : `${publicCount} public`;
 const meta = {
-  alt: `Treemap of ${sized.length} public repositories, sized by source bytes and split by language.`,
-  caption: `${sized.length} repositories · ${bytes(total)} of source · sized by bytes, split by language · GitHub API, ${synced}`,
+  alt: `Treemap of ${sized.length} repositories (${mix}), each tile sized by source bytes and split by language.`,
+  caption: `${mix} · ${bytes(total)} of source · sized by bytes, split by language · GitHub API, ${synced}`,
 };
 
 await mkdir(OUT_DIR, { recursive: true });
 for (const theme of Object.keys(THEMES)) {
   await writeFile(join(OUT_DIR, `work-${theme}.svg`), render(tiles, theme, meta));
 }
-console.log(`Wrote ${sized.length} repos, ${bytes(total)} of source, to assets/work-{light,dark}.svg`);
+console.log(`Wrote ${sized.length} repos (${mix}), ${bytes(total)} of source, to assets/work-{light,dark}.svg`);
