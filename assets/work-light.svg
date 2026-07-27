@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="374" viewBox="0 0 880 374" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" role="img" aria-label="Treemap of 4 public repositories, sized by source bytes and split by language.">
+<title>Treemap of 4 public repositories, sized by source bytes and split by language.</title>
+<clipPath id="clip-nix-windows-config"><rect x="2.00" y="2.00" width="298.26" height="336.00" rx="5"/></clipPath>
+<g clip-path="url(#clip-nix-windows-config)">
+<rect x="2.00" y="2.00" width="298.26" height="133.73" fill="#012456" fill-opacity="0.85"/>
+<rect x="2.00" y="135.73" width="298.26" height="120.04" fill="#7e7eff" fill-opacity="0.85"/>
+<rect x="2.00" y="255.78" width="298.26" height="50.47" fill="#89e051" fill-opacity="0.85"/>
+<rect x="2.00" y="306.25" width="298.26" height="31.75" fill="#384d54" fill-opacity="0.85"/>
+</g>
+<rect x="2.00" y="2.00" width="298.26" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<text x="12.00" y="24.00" font-size="13" font-weight="600" fill="#1f2328">nix-windows-config</text>
+<text x="12.00" y="40.00" font-size="11" fill="#59636e">66 KB</text>
+<clipPath id="clip-my-homebase"><rect x="304.26" y="2.00" width="217.67" height="336.00" rx="5"/></clipPath>
+<g clip-path="url(#clip-my-homebase)">
+<rect x="304.26" y="2.00" width="217.67" height="236.04" fill="#f1e05a" fill-opacity="0.85"/>
+<rect x="304.26" y="238.04" width="217.67" height="95.70" fill="#663399" fill-opacity="0.85"/>
+<rect x="304.26" y="333.74" width="217.67" height="4.26" fill="#3178c6" fill-opacity="0.85"/>
+</g>
+<rect x="304.26" y="2.00" width="217.67" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<text x="314.26" y="24.00" font-size="13" font-weight="600" fill="#1f2328">my-homebase</text>
+<text x="314.26" y="40.00" font-size="11" fill="#59636e">48 KB</text>
+<clipPath id="clip-storage-manager-swift"><rect x="525.93" y="2.00" width="193.89" height="336.00" rx="5"/></clipPath>
+<g clip-path="url(#clip-storage-manager-swift)">
+<rect x="525.93" y="2.00" width="193.89" height="208.94" fill="#dea584" fill-opacity="0.85"/>
+<rect x="525.93" y="210.94" width="193.89" height="117.46" fill="#f05138" fill-opacity="0.85"/>
+<rect x="525.93" y="328.40" width="193.89" height="8.16" fill="#89e051" fill-opacity="0.85"/>
+<rect x="525.93" y="336.56" width="193.89" height="1.44" fill="#555555" fill-opacity="0.85"/>
+</g>
+<rect x="525.93" y="2.00" width="193.89" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<text x="535.93" y="24.00" font-size="13" font-weight="600" fill="#1f2328">storage-manager-swift</text>
+<text x="535.93" y="40.00" font-size="11" fill="#59636e">43 KB</text>
+<clipPath id="clip-mp4trim"><rect x="723.82" y="2.00" width="154.18" height="336.00" rx="5"/></clipPath>
+<g clip-path="url(#clip-mp4trim)">
+<rect x="723.82" y="2.00" width="154.18" height="336.00" fill="#3572a5" fill-opacity="0.85"/>
+</g>
+<rect x="723.82" y="2.00" width="154.18" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<text x="733.82" y="24.00" font-size="13" font-weight="600" fill="#1f2328">mp4trim</text>
+<text x="733.82" y="40.00" font-size="11" fill="#59636e">35 KB</text>
+<text x="0" y="364" font-size="11" fill="#59636e">4 repositories · 192 KB of source · sized by bytes, split by language · GitHub API, 2026-07-27</text>
+</svg>
