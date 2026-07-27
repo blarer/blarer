@@ -142,16 +142,40 @@ function render(tiles, theme, meta) {
 const INCLUDE_PRIVATE = process.env.INCLUDE_PRIVATE !== '0';
 const PRIVATE_NAMES = process.env.PRIVATE_NAMES === '1';
 
-/** Owned repos, public plus (optionally) private. Needs a token with `repo` for private. */
+/**
+ * Owned repos, public plus (optionally) private.
+ *
+ * Listing private repos needs a token with `repo` scope. The built-in Actions
+ * token does not have it and returns 403. Falling back to public-only would be
+ * worse than failing: the nightly job would quietly redraw the grid without the
+ * private tiles and commit that as if it were the truth. So a 403 here is
+ * reported to the caller, which leaves the committed SVGs untouched.
+ */
 async function ownedRepos() {
-  if (!INCLUDE_PRIVATE) return api(`/users/${USER}/repos?per_page=100&sort=pushed`);
-  if (!process.env.GITHUB_TOKEN) {
-    throw new Error('INCLUDE_PRIVATE needs GITHUB_TOKEN with `repo` scope; set INCLUDE_PRIVATE=0 for public only');
+  if (!INCLUDE_PRIVATE) return { repos: await api(`/users/${USER}/repos?per_page=100&sort=pushed`), degraded: false };
+  if (!process.env.GITHUB_TOKEN) return { repos: null, degraded: true, why: 'no GITHUB_TOKEN' };
+  try {
+    return { repos: await api('/user/repos?per_page=100&affiliation=owner&sort=pushed'), degraded: false };
+  } catch (err) {
+    if (!/\b(401|403)\b/.test(String(err.message))) throw err;
+    return { repos: null, degraded: true, why: 'token lacks `repo` scope' };
   }
-  return api('/user/repos?per_page=100&affiliation=owner&sort=pushed');
 }
 
-const list = await ownedRepos();
+const { repos: list, degraded, why } = await ownedRepos();
+
+if (degraded) {
+  console.error(
+    `Cannot list private repositories (${why}).\n` +
+      'Refusing to redraw the grid without them, because that would silently\n' +
+      'publish a smaller picture than the truth and overwrite a correct one.\n' +
+      'Add a PAT with `repo` scope as the REPOS_TOKEN secret, or set\n' +
+      'INCLUDE_PRIVATE=0 to intentionally chart public repositories only.\n' +
+      'Existing assets/work-*.svg left untouched.',
+  );
+  process.exit(0);
+}
+
 const repos = await Promise.all(
   list
     .filter((r) => !r.fork && !r.archived)
