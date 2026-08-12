@@ -1,146 +1,146 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="374" viewBox="0 0 880 374" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" role="img" aria-label="Treemap of 17 repositories (7 public · 10 private), each tile sized by source bytes and split by language.">
 <title>Treemap of 17 repositories (7 public · 10 private), each tile sized by source bytes and split by language.</title>
-<clipPath id="t0"><rect x="2.00" y="2.00" width="393.38" height="336.00" rx="5"/></clipPath>
+<clipPath id="t0"><rect x="2.00" y="2.00" width="388.46" height="336.00" rx="5"/></clipPath>
 <g clip-path="url(#t0)">
-<rect x="2.00" y="2.00" width="393.38" height="293.21" fill="#dea584" fill-opacity="0.85"/>
-<rect x="2.00" y="295.21" width="393.38" height="27.96" fill="#89e051" fill-opacity="0.85"/>
-<rect x="2.00" y="323.17" width="393.38" height="7.12" fill="#3572a5" fill-opacity="0.85"/>
-<rect x="2.00" y="330.29" width="393.38" height="3.83" fill="#012456" fill-opacity="0.85"/>
-<rect x="2.00" y="334.12" width="393.38" height="2.15" fill="#7e7eff" fill-opacity="0.85"/>
-<rect x="2.00" y="336.27" width="393.38" height="1.29" fill="#f05138" fill-opacity="0.85"/>
-<rect x="2.00" y="337.56" width="393.38" height="0.44" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="2.00" y="2.00" width="388.46" height="293.42" fill="#dea584" fill-opacity="0.85"/>
+<rect x="2.00" y="295.42" width="388.46" height="27.82" fill="#89e051" fill-opacity="0.85"/>
+<rect x="2.00" y="323.24" width="388.46" height="7.09" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="2.00" y="330.33" width="388.46" height="3.81" fill="#012456" fill-opacity="0.85"/>
+<rect x="2.00" y="334.14" width="388.46" height="2.14" fill="#7e7eff" fill-opacity="0.85"/>
+<rect x="2.00" y="336.28" width="388.46" height="1.29" fill="#f05138" fill-opacity="0.85"/>
+<rect x="2.00" y="337.57" width="388.46" height="0.43" fill="#8b949e" fill-opacity="0.85"/>
 </g>
-<rect x="2.00" y="2.00" width="393.38" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<rect x="2.00" y="2.00" width="388.46" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
 <text x="12.00" y="24.00" font-size="13" font-weight="600" fill="#1f2328">outloud</text>
-<text x="12.00" y="40.00" font-size="11" fill="#59636e">2.5 MB</text>
-<clipPath id="t1"><rect x="399.38" y="2.00" width="199.77" height="336.00" rx="5"/></clipPath>
+<text x="12.00" y="40.00" font-size="11" fill="#59636e">2.6 MB</text>
+<clipPath id="t1"><rect x="394.46" y="2.00" width="206.87" height="336.00" rx="5"/></clipPath>
 <g clip-path="url(#t1)">
-<rect x="399.38" y="2.00" width="199.77" height="322.15" fill="#3178c6" fill-opacity="0.85"/>
-<rect x="399.38" y="324.15" width="199.77" height="5.51" fill="#f1e05a" fill-opacity="0.85"/>
-<rect x="399.38" y="329.66" width="199.77" height="3.01" fill="#8b949e" fill-opacity="0.85"/>
-<rect x="399.38" y="332.67" width="199.77" height="2.73" fill="#3572a5" fill-opacity="0.85"/>
-<rect x="399.38" y="335.40" width="199.77" height="1.02" fill="#89e051" fill-opacity="0.85"/>
-<rect x="399.38" y="336.42" width="199.77" height="0.63" fill="#8b949e" fill-opacity="0.85"/>
-<rect x="399.38" y="337.05" width="199.77" height="0.61" fill="#8b949e" fill-opacity="0.85"/>
-<rect x="399.38" y="337.66" width="199.77" height="0.34" fill="#f05138" fill-opacity="0.85"/>
+<rect x="394.46" y="2.00" width="206.87" height="322.76" fill="#3178c6" fill-opacity="0.85"/>
+<rect x="394.46" y="324.76" width="206.87" height="5.19" fill="#f1e05a" fill-opacity="0.85"/>
+<rect x="394.46" y="329.95" width="206.87" height="2.86" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="394.46" y="332.81" width="206.87" height="2.59" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="394.46" y="335.40" width="206.87" height="1.18" fill="#89e051" fill-opacity="0.85"/>
+<rect x="394.46" y="336.58" width="206.87" height="0.60" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="394.46" y="337.18" width="206.87" height="0.52" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="394.46" y="337.70" width="206.87" height="0.30" fill="#f05138" fill-opacity="0.85"/>
 </g>
-<rect x="399.38" y="2.00" width="199.77" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="409.38" y="24.00" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
-<text x="409.38" y="40.00" font-size="11" fill="#59636e">1.3 MB</text>
-<clipPath id="t2"><rect x="603.16" y="2.00" width="139.56" height="133.62" rx="5"/></clipPath>
+<rect x="394.46" y="2.00" width="206.87" height="336.00" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="404.46" y="24.00" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
+<text x="404.46" y="40.00" font-size="11" fill="#59636e">1.4 MB</text>
+<clipPath id="t2"><rect x="605.33" y="2.00" width="138.44" height="132.31" rx="5"/></clipPath>
 <g clip-path="url(#t2)">
-<rect x="603.16" y="2.00" width="139.56" height="75.90" fill="#00add8" fill-opacity="0.85"/>
-<rect x="603.16" y="77.90" width="139.56" height="34.07" fill="#8b949e" fill-opacity="0.85"/>
-<rect x="603.16" y="111.97" width="139.56" height="17.79" fill="#89e051" fill-opacity="0.85"/>
-<rect x="603.16" y="129.76" width="139.56" height="5.62" fill="#3178c6" fill-opacity="0.85"/>
-<rect x="603.16" y="135.38" width="139.56" height="0.13" fill="#f1e05a" fill-opacity="0.85"/>
-<rect x="603.16" y="135.51" width="139.56" height="0.10" fill="#e34c26" fill-opacity="0.85"/>
+<rect x="605.33" y="2.00" width="138.44" height="75.16" fill="#00add8" fill-opacity="0.85"/>
+<rect x="605.33" y="77.16" width="138.44" height="33.74" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="605.33" y="110.89" width="138.44" height="17.62" fill="#89e051" fill-opacity="0.85"/>
+<rect x="605.33" y="128.51" width="138.44" height="5.57" fill="#3178c6" fill-opacity="0.85"/>
+<rect x="605.33" y="134.08" width="138.44" height="0.13" fill="#f1e05a" fill-opacity="0.85"/>
+<rect x="605.33" y="134.21" width="138.44" height="0.10" fill="#e34c26" fill-opacity="0.85"/>
 </g>
-<rect x="603.16" y="2.00" width="139.56" height="133.62" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="613.16" y="24.00" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
-<text x="613.16" y="40.00" font-size="11" fill="#59636e">372 KB</text>
-<clipPath id="t3"><rect x="746.72" y="2.00" width="131.28" height="133.62" rx="5"/></clipPath>
+<rect x="605.33" y="2.00" width="138.44" height="132.31" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="615.33" y="24.00" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
+<text x="615.33" y="40.00" font-size="11" fill="#59636e">372 KB</text>
+<clipPath id="t3"><rect x="747.77" y="2.00" width="130.23" height="132.31" rx="5"/></clipPath>
 <g clip-path="url(#t3)">
-<rect x="746.72" y="2.00" width="131.28" height="118.48" fill="#8b949e" fill-opacity="0.85"/>
-<rect x="746.72" y="120.48" width="131.28" height="15.14" fill="#012456" fill-opacity="0.85"/>
+<rect x="747.77" y="2.00" width="130.23" height="117.32" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="747.77" y="119.32" width="130.23" height="14.99" fill="#012456" fill-opacity="0.85"/>
 </g>
-<rect x="746.72" y="2.00" width="131.28" height="133.62" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="756.72" y="24.00" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
-<text x="756.72" y="40.00" font-size="11" fill="#59636e">350 KB</text>
-<clipPath id="t4"><rect x="603.16" y="139.62" width="133.64" height="107.56" rx="5"/></clipPath>
+<rect x="747.77" y="2.00" width="130.23" height="132.31" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="757.77" y="24.00" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
+<text x="757.77" y="40.00" font-size="11" fill="#59636e">350 KB</text>
+<clipPath id="t4"><rect x="605.33" y="138.31" width="134.78" height="104.73" rx="5"/></clipPath>
 <g clip-path="url(#t4)">
-<rect x="603.16" y="139.62" width="133.64" height="67.53" fill="#7e7eff" fill-opacity="0.85"/>
-<rect x="603.16" y="207.14" width="133.64" height="12.06" fill="#384d54" fill-opacity="0.85"/>
-<rect x="603.16" y="219.20" width="133.64" height="11.75" fill="#000080" fill-opacity="0.85"/>
-<rect x="603.16" y="230.95" width="133.64" height="6.97" fill="#89e051" fill-opacity="0.85"/>
-<rect x="603.16" y="237.93" width="133.64" height="6.27" fill="#3572a5" fill-opacity="0.85"/>
-<rect x="603.16" y="244.19" width="133.64" height="2.98" fill="#012456" fill-opacity="0.85"/>
+<rect x="605.33" y="138.31" width="134.78" height="65.75" fill="#7e7eff" fill-opacity="0.85"/>
+<rect x="605.33" y="204.07" width="134.78" height="11.74" fill="#384d54" fill-opacity="0.85"/>
+<rect x="605.33" y="215.81" width="134.78" height="11.44" fill="#000080" fill-opacity="0.85"/>
+<rect x="605.33" y="227.25" width="134.78" height="6.79" fill="#89e051" fill-opacity="0.85"/>
+<rect x="605.33" y="234.04" width="134.78" height="6.10" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="605.33" y="240.14" width="134.78" height="2.90" fill="#012456" fill-opacity="0.85"/>
 </g>
-<rect x="603.16" y="139.62" width="133.64" height="107.56" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="613.16" y="161.62" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
-<text x="613.16" y="177.62" font-size="11" fill="#59636e">289 KB</text>
-<clipPath id="t5"><rect x="603.16" y="251.17" width="133.64" height="86.83" rx="5"/></clipPath>
+<rect x="605.33" y="138.31" width="134.78" height="104.73" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="615.33" y="160.31" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
+<text x="615.33" y="176.31" font-size="11" fill="#59636e">289 KB</text>
+<clipPath id="t5"><rect x="605.33" y="247.04" width="134.78" height="90.96" rx="5"/></clipPath>
 <g clip-path="url(#t5)">
-<rect x="603.16" y="251.17" width="133.64" height="64.66" fill="#7e7eff" fill-opacity="0.85"/>
-<rect x="603.16" y="315.84" width="133.64" height="12.34" fill="#000080" fill-opacity="0.85"/>
-<rect x="603.16" y="328.18" width="133.64" height="6.21" fill="#3572a5" fill-opacity="0.85"/>
-<rect x="603.16" y="334.39" width="133.64" height="2.46" fill="#89e051" fill-opacity="0.85"/>
-<rect x="603.16" y="336.86" width="133.64" height="1.14" fill="#384d54" fill-opacity="0.85"/>
+<rect x="605.33" y="247.04" width="134.78" height="69.31" fill="#7e7eff" fill-opacity="0.85"/>
+<rect x="605.33" y="316.36" width="134.78" height="12.05" fill="#000080" fill-opacity="0.85"/>
+<rect x="605.33" y="328.41" width="134.78" height="6.07" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="605.33" y="334.48" width="134.78" height="2.41" fill="#89e051" fill-opacity="0.85"/>
+<rect x="605.33" y="336.88" width="134.78" height="1.12" fill="#384d54" fill-opacity="0.85"/>
 </g>
-<rect x="603.16" y="251.17" width="133.64" height="86.83" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<text x="613.16" y="273.17" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
-<text x="613.16" y="289.17" font-size="11" fill="#59636e">235 KB</text>
-<clipPath id="t6"><rect x="740.79" y="139.62" width="78.83" height="68.39" rx="5"/></clipPath>
+<rect x="605.33" y="247.04" width="134.78" height="90.96" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="615.33" y="269.04" font-size="13" font-weight="600" fill="#59636e" font-style="italic">private</text>
+<text x="615.33" y="285.04" font-size="11" fill="#59636e">252 KB</text>
+<clipPath id="t6"><rect x="744.11" y="138.31" width="76.88" height="68.86" rx="5"/></clipPath>
 <g clip-path="url(#t6)">
-<rect x="740.79" y="139.62" width="78.83" height="63.24" fill="#3572a5" fill-opacity="0.85"/>
-<rect x="740.79" y="202.86" width="78.83" height="3.50" fill="#012456" fill-opacity="0.85"/>
-<rect x="740.79" y="206.36" width="78.83" height="1.65" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="744.11" y="138.31" width="76.88" height="63.67" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="744.11" y="201.98" width="76.88" height="3.52" fill="#012456" fill-opacity="0.85"/>
+<rect x="744.11" y="205.51" width="76.88" height="1.66" fill="#8b949e" fill-opacity="0.85"/>
 </g>
-<rect x="740.79" y="139.62" width="78.83" height="68.39" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<clipPath id="t7"><rect x="823.62" y="139.62" width="54.38" height="68.39" rx="5"/></clipPath>
+<rect x="744.11" y="138.31" width="76.88" height="68.86" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<clipPath id="t7"><rect x="824.99" y="138.31" width="53.01" height="68.86" rx="5"/></clipPath>
 <g clip-path="url(#t7)">
-<rect x="823.62" y="139.62" width="54.38" height="49.98" fill="#f1e05a" fill-opacity="0.85"/>
-<rect x="823.62" y="189.60" width="54.38" height="17.88" fill="#663399" fill-opacity="0.85"/>
-<rect x="823.62" y="207.48" width="54.38" height="0.53" fill="#3178c6" fill-opacity="0.85"/>
+<rect x="824.99" y="138.31" width="53.01" height="50.32" fill="#f1e05a" fill-opacity="0.85"/>
+<rect x="824.99" y="188.64" width="53.01" height="18.00" fill="#663399" fill-opacity="0.85"/>
+<rect x="824.99" y="206.64" width="53.01" height="0.53" fill="#3178c6" fill-opacity="0.85"/>
 </g>
-<rect x="823.62" y="139.62" width="54.38" height="68.39" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
-<clipPath id="t8"><rect x="740.79" y="212.01" width="43.91" height="69.26" rx="5"/></clipPath>
+<rect x="824.99" y="138.31" width="53.01" height="68.86" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<clipPath id="t8"><rect x="744.11" y="211.17" width="42.79" height="69.73" rx="5"/></clipPath>
 <g clip-path="url(#t8)">
-<rect x="740.79" y="212.01" width="43.91" height="27.57" fill="#012456" fill-opacity="0.85"/>
-<rect x="740.79" y="239.57" width="43.91" height="24.74" fill="#7e7eff" fill-opacity="0.85"/>
-<rect x="740.79" y="264.32" width="43.91" height="10.40" fill="#89e051" fill-opacity="0.85"/>
-<rect x="740.79" y="274.72" width="43.91" height="6.54" fill="#384d54" fill-opacity="0.85"/>
+<rect x="744.11" y="211.17" width="42.79" height="27.75" fill="#012456" fill-opacity="0.85"/>
+<rect x="744.11" y="238.92" width="42.79" height="24.91" fill="#7e7eff" fill-opacity="0.85"/>
+<rect x="744.11" y="263.84" width="42.79" height="10.47" fill="#89e051" fill-opacity="0.85"/>
+<rect x="744.11" y="274.31" width="42.79" height="6.59" fill="#384d54" fill-opacity="0.85"/>
 </g>
-<rect x="740.79" y="212.01" width="43.91" height="69.26" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
-<clipPath id="t9"><rect x="740.79" y="285.26" width="43.91" height="52.74" rx="5"/></clipPath>
+<rect x="744.11" y="211.17" width="42.79" height="69.73" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<clipPath id="t9"><rect x="744.11" y="284.90" width="42.79" height="53.10" rx="5"/></clipPath>
 <g clip-path="url(#t9)">
-<rect x="740.79" y="285.26" width="43.91" height="52.38" fill="#3178c6" fill-opacity="0.85"/>
-<rect x="740.79" y="337.65" width="43.91" height="0.35" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="744.11" y="284.90" width="42.79" height="52.75" fill="#3178c6" fill-opacity="0.85"/>
+<rect x="744.11" y="337.65" width="42.79" height="0.35" fill="#8b949e" fill-opacity="0.85"/>
 </g>
-<rect x="740.79" y="285.26" width="43.91" height="52.74" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<clipPath id="t10"><rect x="788.71" y="212.01" width="44.05" height="43.82" rx="5"/></clipPath>
+<rect x="744.11" y="284.90" width="42.79" height="53.10" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<clipPath id="t10"><rect x="790.90" y="211.17" width="42.92" height="44.13" rx="5"/></clipPath>
 <g clip-path="url(#t10)">
-<rect x="788.71" y="212.01" width="44.05" height="27.25" fill="#dea584" fill-opacity="0.85"/>
-<rect x="788.71" y="239.26" width="44.05" height="15.32" fill="#f05138" fill-opacity="0.85"/>
-<rect x="788.71" y="254.58" width="44.05" height="1.06" fill="#89e051" fill-opacity="0.85"/>
-<rect x="788.71" y="255.64" width="44.05" height="0.19" fill="#555555" fill-opacity="0.85"/>
+<rect x="790.90" y="211.17" width="42.92" height="27.44" fill="#dea584" fill-opacity="0.85"/>
+<rect x="790.90" y="238.61" width="42.92" height="15.43" fill="#f05138" fill-opacity="0.85"/>
+<rect x="790.90" y="254.04" width="42.92" height="1.07" fill="#89e051" fill-opacity="0.85"/>
+<rect x="790.90" y="255.11" width="42.92" height="0.19" fill="#555555" fill-opacity="0.85"/>
 </g>
-<rect x="788.71" y="212.01" width="44.05" height="43.82" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
-<clipPath id="t11"><rect x="836.76" y="212.01" width="41.24" height="43.82" rx="5"/></clipPath>
+<rect x="790.90" y="211.17" width="42.92" height="44.13" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<clipPath id="t11"><rect x="837.82" y="211.17" width="40.18" height="44.13" rx="5"/></clipPath>
 <g clip-path="url(#t11)">
-<rect x="836.76" y="212.01" width="41.24" height="26.46" fill="#f1e05a" fill-opacity="0.85"/>
-<rect x="836.76" y="238.47" width="41.24" height="9.60" fill="#3572a5" fill-opacity="0.85"/>
-<rect x="836.76" y="248.07" width="41.24" height="4.76" fill="#663399" fill-opacity="0.85"/>
-<rect x="836.76" y="252.82" width="41.24" height="3.01" fill="#e34c26" fill-opacity="0.85"/>
+<rect x="837.82" y="211.17" width="40.18" height="26.65" fill="#f1e05a" fill-opacity="0.85"/>
+<rect x="837.82" y="237.82" width="40.18" height="9.67" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="837.82" y="247.48" width="40.18" height="4.79" fill="#663399" fill-opacity="0.85"/>
+<rect x="837.82" y="252.27" width="40.18" height="3.03" fill="#e34c26" fill-opacity="0.85"/>
 </g>
-<rect x="836.76" y="212.01" width="41.24" height="43.82" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<clipPath id="t12"><rect x="788.71" y="259.83" width="43.25" height="37.14" rx="5"/></clipPath>
+<rect x="837.82" y="211.17" width="40.18" height="44.13" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<clipPath id="t12"><rect x="790.90" y="259.30" width="42.14" height="37.41" rx="5"/></clipPath>
 <g clip-path="url(#t12)">
-<rect x="788.71" y="259.83" width="43.25" height="37.14" fill="#dea584" fill-opacity="0.85"/>
+<rect x="790.90" y="259.30" width="42.14" height="37.41" fill="#dea584" fill-opacity="0.85"/>
 </g>
-<rect x="788.71" y="259.83" width="43.25" height="37.14" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<clipPath id="t13"><rect x="788.71" y="300.97" width="43.25" height="37.03" rx="5"/></clipPath>
+<rect x="790.90" y="259.30" width="42.14" height="37.41" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<clipPath id="t13"><rect x="790.90" y="300.70" width="42.14" height="37.30" rx="5"/></clipPath>
 <g clip-path="url(#t13)">
-<rect x="788.71" y="300.97" width="43.25" height="35.55" fill="#f05138" fill-opacity="0.85"/>
-<rect x="788.71" y="336.52" width="43.25" height="1.48" fill="#89e051" fill-opacity="0.85"/>
+<rect x="790.90" y="300.70" width="42.14" height="35.80" fill="#f05138" fill-opacity="0.85"/>
+<rect x="790.90" y="336.50" width="42.14" height="1.50" fill="#89e051" fill-opacity="0.85"/>
 </g>
-<rect x="788.71" y="300.97" width="43.25" height="37.03" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
-<clipPath id="t14"><rect x="835.96" y="259.83" width="42.04" height="35.90" rx="5"/></clipPath>
+<rect x="790.90" y="300.70" width="42.14" height="37.30" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<clipPath id="t14"><rect x="837.04" y="259.30" width="40.96" height="36.15" rx="5"/></clipPath>
 <g clip-path="url(#t14)">
-<rect x="835.96" y="259.83" width="42.04" height="35.90" fill="#3572a5" fill-opacity="0.85"/>
+<rect x="837.04" y="259.30" width="40.96" height="36.15" fill="#3572a5" fill-opacity="0.85"/>
 </g>
-<rect x="835.96" y="259.83" width="42.04" height="35.90" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
-<clipPath id="t15"><rect x="835.96" y="299.73" width="20.63" height="38.27" rx="5"/></clipPath>
+<rect x="837.04" y="259.30" width="40.96" height="36.15" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<clipPath id="t15"><rect x="837.04" y="299.45" width="20.05" height="38.55" rx="5"/></clipPath>
 <g clip-path="url(#t15)">
-<rect x="835.96" y="299.73" width="20.63" height="21.33" fill="#89e051" fill-opacity="0.85"/>
-<rect x="835.96" y="321.06" width="20.63" height="16.25" fill="#663399" fill-opacity="0.85"/>
-<rect x="835.96" y="337.31" width="20.63" height="0.69" fill="#8b949e" fill-opacity="0.85"/>
+<rect x="837.04" y="299.45" width="20.05" height="21.48" fill="#89e051" fill-opacity="0.85"/>
+<rect x="837.04" y="320.94" width="20.05" height="16.37" fill="#663399" fill-opacity="0.85"/>
+<rect x="837.04" y="337.31" width="20.05" height="0.69" fill="#8b949e" fill-opacity="0.85"/>
 </g>
-<rect x="835.96" y="299.73" width="20.63" height="38.27" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
-<clipPath id="t16"><rect x="860.59" y="299.73" width="17.41" height="38.27" rx="5"/></clipPath>
+<rect x="837.04" y="299.45" width="20.05" height="38.55" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1" stroke-dasharray="3 3"/>
+<clipPath id="t16"><rect x="861.10" y="299.45" width="16.90" height="38.55" rx="5"/></clipPath>
 <g clip-path="url(#t16)">
-<rect x="860.59" y="299.73" width="17.41" height="38.27" fill="#f1e05a" fill-opacity="0.85"/>
+<rect x="861.10" y="299.45" width="16.90" height="38.55" fill="#f1e05a" fill-opacity="0.85"/>
 </g>
-<rect x="860.59" y="299.73" width="17.41" height="38.27" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
-<text x="0" y="364" font-size="11" fill="#59636e">7 public · 10 private · 5.6 MB of source · sized by bytes, split by language · GitHub API, 2026-08-11</text>
+<rect x="861.10" y="299.45" width="16.90" height="38.55" rx="5" fill="none" stroke="#d1d9e0" stroke-width="1"/>
+<text x="0" y="364" font-size="11" fill="#59636e">7 public · 10 private · 5.7 MB of source · sized by bytes, split by language · GitHub API, 2026-08-12</text>
 </svg>
